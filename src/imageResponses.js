@@ -1,4 +1,5 @@
 const fs = require('fs');
+
 const image = fs.readFileSync(`${__dirname}/../client/spongegar.png`);
 
 const getImage = (request, response) => {
@@ -8,5 +9,5 @@ const getImage = (request, response) => {
 };
 
 module.exports = {
-  getImage
+  getImage,
 };
